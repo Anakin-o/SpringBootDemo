@@ -31,6 +31,7 @@ public class SwaggerDemoController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public User getStudent(@PathVariable long id) {
         logger.info("开始查询某个用户信息");
+        //dev2
         return userRepository.findById(id);
     }
 }
