@@ -1,0 +1,10 @@
+diff a/src/main/java/com/example/boot/demo/controller/SwaggerDemoController.java b/src/main/java/com/example/boot/demo/controller/SwaggerDemoController.java	(rejected hunks)
+@@ -31,6 +31,7 @@
+     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+     public User getStudent(@PathVariable long id) {
+         logger.info("开始查询某个用户信息");
++        //dev2
+         return userRepository.findById(id);
+     }
+ }
+\ No newline at end of file
